@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Venice Huelar">
+<style>
+a.one:link{
+	background-color:red;
+	text-decoration:none;
+	border:solid black 1px;
+	padding:1px;
+	color:white;
+}
+
+a.one:visited{
+	background-color:yellow;
+	text-decoration:none;
+	border:solid black 1px;
+	padding:1px;
+	color:black;
+}
+
+a.one:hover{
+	background-color:#cc0000;
+	text-decoration:none;
+	border:solid black 1px;
+	padding:1px;
+	color:black;
+}
+
+a.two:link{
+	background-color:blue;
+	text-decoration:none;
+	border:solid black 1px;
+	padding:1px;
+	color:white;
+}
+
+a.two:visited{
+	background-color:green;
+	text-decoration:none;
+	border:solid black 1px;
+	padding:1px;
+	color:black;
+}
+
+a.two:hover{
+	background-color:#0033cc;
+	text-decoration:none;
+	border:solid black 1px;
+	padding:1px;
+	color:black;
+}
+
+ 
+div{
+	width:80px;
+	height:80px;
+	text-decoration:none;
+	border:solid black 1px;
+
+}
+	
+
+div:target#div1{
+	background-color:#336699;
+	color:#ffcc66;
+}	
+
+
+div:target#div2{	
+	border-style:dotted;
+	border-color:green;
+	border-width: 10px;
+	background-color:#009999;
+	color:#ffcc66;
+
+}
+</style>
+</head>
+<body>
+	
+	<a class="one" href="#div1" target="_blank">First Link</a>
+	<a class="two" href="#div2" target="_blank">Second Link</a>
+	<br></br>
+	<div id="div1"> 
+        Div 1 here
+        </div>
+	<br>
+	</br>
+	<div id="div2">
+	 Div 2 here
+        </div>
+</body>
